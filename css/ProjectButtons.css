@@ -1,23 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Cookie);
-
-[class*="icon-"] {
+.icon {
   font-family: 'Cookie';
   font-style: normal;
   font-size: 1.5em;
   speak: none;
-}
-.icon-home:after { content: "TIN"; } 
-.icon-cog:after { content: "Virtual Office"; } 
-.icon-cw:after { content: "Infinity DTH"; } 
-.icon-location:after { content: "Venus Wire"; } 
-.icon-Ecomm:after { content: "Test Harness"; } 
-* { 
   -webkit-box-sizing: border-box; 
   -moz-box-sizing:    border-box; 
   box-sizing:         border-box; 
   margin: 0;
   padding: 0;
 }
+.icon-home { content: "TIN"; } 
+.icon-cog { content: "Virtual Office"; } 
+.icon-cw { content: "Infinity DTH"; } 
+.icon-location { content: "Venus Wire"; } 
+.icon-Ecomm { content: "Test Harness"; } 
 
 html {
   color: #444;

@@ -3,19 +3,18 @@
   font-style: normal;
   font-size: 1.5em;
   speak: none;
-}
-.icon-home { content: "TIN"; } 
-.icon-cog { content: "Virtual Office"; } 
-.icon-cw { content: "Infinity DTH"; } 
-.icon-location { content: "Venus Wire"; } 
-.icon-Ecomm { content: "Test Harness"; } 
-* { 
+  
   -webkit-box-sizing: border-box; 
   -moz-box-sizing:    border-box; 
   box-sizing:         border-box; 
   margin: 0;
   padding: 0;
 }
+.icon-home { content: "TIN"; } 
+.icon-cog { content: "Virtual Office"; } 
+.icon-cw { content: "Infinity DTH"; } 
+.icon-location { content: "Venus Wire"; } 
+.icon-Ecomm { content: "Test Harness"; } 
 
 html {
   color: #444;

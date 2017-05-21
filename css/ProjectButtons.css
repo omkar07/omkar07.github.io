@@ -11,9 +11,12 @@
 }
 .icon-home { content: "TIN"; } 
 .icon-cog { content: "Virtual Office"; } 
-.icon-cw { content: "Infinity DTH"; } 
-.icon-location { content: "Venus Wire"; } 
+.icon-cw { content: "Remote Code Publisher"; } 
+.icon-location { content: "Type Based Dependency Analysis"; } 
 .icon-Ecomm { content: "Test Harness"; } 
+.icon-cw1 { content: "Beyond Note (Android App)"; } 
+.icon-location1 { content: "NoSql Database"; } 
+.icon-Ecomm1 { content: "Text Sentiment Analysis"; } 
 
 html {
   color: #444;

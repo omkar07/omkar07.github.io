@@ -303,7 +303,9 @@ var links = [
 
 
     // add a SVG to the body
-    var svg=d3.select('body').append('svg');
+    var svg=d3.select('body').append('svg')
+        .attr('width', width)
+        .attr('height', height);
     // setting up force
     var force = d3.layout.force()
         .size([width, height])

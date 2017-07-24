@@ -263,85 +263,7 @@ I am keen on providing solutions to the challenges in agile environment using SD
         <h5 align="left">Cloud Computing</h5>
         <h5 align="left">Android Programming</h5> 
 	     
-	     	     	  <script src="https://d3js.org/d3.v3.min.js"></script>
-	    <script>
-
-// setting width and height for our SVG
-var width =500,
-    height = 280;
-
-// setup links
-var links = [
-    { source: 'Algorithms', target:'FullStack' },
-    { source: 'Algorithms', target:'Systems' },
-    { source: 'Algorithms', target:'Kernel' },
-    { source: 'Algorithms', target:'Database' },
-    { source: 'Algorithms', target:'Security' },
-    { source: 'FullStack', target:'SoftwareModelling' },
-    { source: 'FullStack', target:'HCI' },
-    { source: 'FullStack', target:'SoftwareEngineering' },
-    { source: 'FullStack', target:'ComputerSecurity' },
-    { source: 'Systems', target:'DataStructure' },
-    { source: 'Systems', target:'ComputerNetworks' },
-    { source: 'Systems', target:'SystemSecurity' },
-    { source: 'Systems', target:'ObjectOrientedDesign' },
-];
-
-
-    // creating nodes array
-    var nodes = {};
-
-    // calculating nodes links data
-    links.forEach(function(link) {
-        link.source = nodes[link.source] ||
-            (nodes[link.source] = {name: link.source});
-        link.target = nodes[link.target] ||
-            (nodes[link.target] = {name: link.target});
-    });
-
-
-    // add a SVG to the body
-    var svg=d3.select('#education').append('svg')
-        .attr('width', width)
-        .attr('height', height);
-    // setting up force
-    var force = d3.layout.force()
-        .size([width, height])
-        .nodes(d3.values(nodes))
-        .links(links)
-        .on("tick", tick)
-        .linkDistance(200)
-        .start();
-
-    // setting up links
-    var link = svg.selectAll('.link')
-        .data(links)
-        .enter().append('line')
-        .attr('class', 'link');
-
-    // add nodes
-    var node = svg.selectAll('.node')
-        .data(force.nodes())
-        .enter().append('circle')
-        .attr('class', 'node')
-        .attr('r', width * 0.01);
-
-
-
-    // implementing drag function & resetting links
-    function tick(e) {
-
-        node.attr('cx', function(d) { return d.x; })
-            .attr('cy', function(d) { return d.y; })
-            .call(force.drag);
-
-        link.attr('x1', function(d) { return d.source.x; })
-            .attr('y1', function(d) { return d.source.y; })
-            .attr('x2', function(d) { return d.target.x; })
-            .attr('y2', function(d) { return d.target.y; });
-
-    }
-    </script>
+	     	     	 
     </div>
     </div>
 
@@ -614,6 +536,85 @@ query functionality, persisted database contents to an XML file. This process is
 
 <!-- Footer -->
 <footer class="container-fluid-footer bg-5 text-center" id="contact">
+	 <script src="https://d3js.org/d3.v3.min.js"></script>
+	    <script>
+
+// setting width and height for our SVG
+var width =500,
+    height = 280;
+
+// setup links
+var links = [
+    { source: 'Algorithms', target:'FullStack' },
+    { source: 'Algorithms', target:'Systems' },
+    { source: 'Algorithms', target:'Kernel' },
+    { source: 'Algorithms', target:'Database' },
+    { source: 'Algorithms', target:'Security' },
+    { source: 'FullStack', target:'SoftwareModelling' },
+    { source: 'FullStack', target:'HCI' },
+    { source: 'FullStack', target:'SoftwareEngineering' },
+    { source: 'FullStack', target:'ComputerSecurity' },
+    { source: 'Systems', target:'DataStructure' },
+    { source: 'Systems', target:'ComputerNetworks' },
+    { source: 'Systems', target:'SystemSecurity' },
+    { source: 'Systems', target:'ObjectOrientedDesign' },
+];
+
+
+    // creating nodes array
+    var nodes = {};
+
+    // calculating nodes links data
+    links.forEach(function(link) {
+        link.source = nodes[link.source] ||
+            (nodes[link.source] = {name: link.source});
+        link.target = nodes[link.target] ||
+            (nodes[link.target] = {name: link.target});
+    });
+
+
+    // add a SVG to the body
+    var svg=d3.select('#contact').append('svg')
+        .attr('width', width)
+        .attr('height', height);
+    // setting up force
+    var force = d3.layout.force()
+        .size([width, height])
+        .nodes(d3.values(nodes))
+        .links(links)
+        .on("tick", tick)
+        .linkDistance(200)
+        .start();
+
+    // setting up links
+    var link = svg.selectAll('.link')
+        .data(links)
+        .enter().append('line')
+        .attr('class', 'link');
+
+    // add nodes
+    var node = svg.selectAll('.node')
+        .data(force.nodes())
+        .enter().append('circle')
+        .attr('class', 'node')
+        .attr('r', width * 0.01);
+
+
+
+    // implementing drag function & resetting links
+    function tick(e) {
+
+        node.attr('cx', function(d) { return d.x; })
+            .attr('cy', function(d) { return d.y; })
+            .call(force.drag);
+
+        link.attr('x1', function(d) { return d.source.x; })
+            .attr('y1', function(d) { return d.source.y; })
+            .attr('x2', function(d) { return d.target.x; })
+            .attr('y2', function(d) { return d.target.y; });
+
+    }
+    </script>
     <h3 class="margin">Contact </h3><br><br><br><br><br><br>
   <p>I am located in Syracuse, but am looking for full time opportunity all over the country.<br> If you are interested in working with me,<br> contact me at omkarpatil92@gmail.com and I will get back to you. Thanks!</p> 
     <br><br><br><br><br>
